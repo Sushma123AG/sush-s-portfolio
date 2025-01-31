@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+/* General Page Styling */
+body {
+  background-color: #121212; /* Dark theme */
+  color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  width: 1200px;
+  height: 5000px;
+  margin: auto;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(90deg, #ff6b6b, #00c3ff);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.navbar-nav li a {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.navbar-nav li a:hover {
+  color: #ff6b6b !important;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.title, .subtitle, .col {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Buttons */
+.btn-info {
+  background: linear-gradient(90deg, #00c3ff, #ff6b6b);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-info:hover {
+  background: linear-gradient(90deg, #ff6b6b, #00c3ff);
+  transform: scale(1.1);
+}
+
+/* Image Styling */
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 195, 255, 0.3);
+  opacity: 0.9;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 5px 5px 20px rgba(255, 107, 107, 0.5);
+}
+
+/* Skills Section */
+.skills-overlay {
+  background: linear-gradient(90deg, #00c3ff, #ff6b6b);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.skill-item h3 {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item li {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+/* Meter (Progress Bar) */
+meter {
+  width: 70%;
+  height: 12px;
+  border-radius: 5px;
+  background: #444;
+}
+
+meter::-webkit-meter-bar {
+  background: #444;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(90deg, #ff6b6b, #00c3ff);
+}
+
+/* Experience & Workshops */
+.experience-overlay {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 195, 255, 0.2);
+}
+
+.experience-content h4 {
+  color: #00c3ff;
+  font-weight: bold;
+}
+
+/* Participation Section */
+.experience-overlays {
+  background: #232323;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.experience-overlays:hover {
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+}
+
+/* Certifications Links */
+.experience-items a {
+  color: #ff6b6b;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.experience-items a:hover {
+  color: #00c3ff;
+  text-decoration: underline;
+}
+
+
+</style>
+
+</head>
+<body>
+<header class="top">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header col-md-2"style="padding-top:25px">
+        <a href="#" class="logo"><strong>SUSHMA A G</strong></a>
+      </div>
+      <div class="col-md-offset-1 col-md-7">
+        <ul class="nav navbar-nav" style="padding-top: 25px;font-size:22px">
+		
+          <li><a href="#" class="active">About me</a></li>
+		  <li><a href="#">Education</a></li>
+		  <li><a href="#">Skills</a></li>
+          <li><a href="#">Internship</a></li>
+          <li><a href="#">Workshop</a></li>
+          <li><a href="#">Certifications</a></li>
+          <li><a href="#">Participation</a></li>
+		  <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+	  <div class="col-md-2" style="padding-left:70px;padding-top:12px;color:grey">
+           <h2><strong>Portfolio</strong></h2>
+    </div>
+  </nav>
+</header>
+<main class="row">
+    
+
+  <section class="row1">
+    <div class="container-fluid">
+      <div class="col-md-offset-1 col-md-6">
+        <p class="subtitle" style="font-family:papyrus;padding-top:50px;font-size:20px"><strong>Hello,</strong></p>
+        <h1 class="title" style="font-family:papyrus;padding-top:40px"><strong>
+          I'm <span>Sushma<br />a</span> Electronics and Communication Engineer</strong>
+        </h1>
+        <p class="col" style="font-size:20px;padding-top:40px;padding-left:100px;font-family:papyrus">
+          Welcome to my portfolio! I'm Sushma AG, A Passionate Electronics and Communication Engineer with expertise in both hardware and software development. Skilled in designing, programming, and integrating embedded systems that power innovative solutions. A problem-solver at heart, I thrive at the intersection of technology and creativity. Always eager to push the boundaries of what's possible.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <figure style="opacity:0.6;padding-left:30px">
+          <img src="image/sush.jpg" class="img-responsive" style="opacity-*+">
+        </figure>
+      </div>
+    </div>
+  </section>
+  
+  <section class="education-row ">
+  <div class="education-content" style="padding-top:20px;padding:10px">
+    <h2 style="font-family:papyrus">Education</h2>
+    <div class="education-item" style="">
+      <h4>Bachelor's in Electronics and Commuication Engineering</h4>
+      <p><strong>Institution: </strong>RMK COLLEGE OF ENGINEERING AND TECHNOLOGY</p>
+      <p><strong>Date: </strong> Sept 2021 - June 2025</p>
+      <p><strong>Description: </strong> Focused on VLSI, Electronics,Embedded Systems,Web Devlopment ,Completed various projects involving IOT .</p>
+    </div>
+	<div class="education-button-container">
+      <a href="https://www.linkedin.com/in/sushma-a-g-4664b2239/" class="btn btn-info">Linkedin</a>
+    </div>
+  </div>
+</section>
+
+  <section class="row3"
+	
+  <div class="col-md-offset-5 col-md-7">
+  <h1 style="font-family:papyrus;color:white;font-size:45px;padding-left:90px;padding-top:25px"><strong>SKILLS</strong></h1>
+    <div class="skills-overlay">
+      
+      <div class="skills-content" >
+	  <div class="skill-item">
+          <h3><strong>Core Skills</strong></h3>
+          <ul style="color:white;">
+            <li><strong>Embedded C Programming       :</strong> <meter value="90" min="0" max="100"></meter></li>
+            <li><strong> Verilog(VHDL)       :</strong> <meter value="85" min="0" max="100"></meter></li>
+            
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3><strong>Web Development</strong></h3>
+          <ul style="color:white;">
+            <li><strong>HTML5       :</strong> <meter value="90" min="0" max="100"></meter></li>
+            <li><strong>CSS3        :</strong> <meter value="85" min="0" max="100"></meter></li>
+            <li><strong>Bootstrap   :</strong> <meter value="75" min="0" max="100"></meter></li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3><strong>Back-End Development</strong></h3>
+          <ul style="color:white;">
+            <li><strong>Core Java        :  </strong> <meter value="85" min="0" max="100"></meter></li>
+			<li><strong>C Programming      :  </strong> <meter value="85" min="0" max="100"></meter></li>
+			
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+   <section class="row2">
+   <div class="col-md-8">
+    <div class="experience-overlay">
+      <h1 style="font-family:papyrus;color:white"><strong>INTERNSHIP & TRAINING</strong></h1>
+      <div class="experience-content" style="padding-top:30px">
+        <div class="experience-item">
+          <h4>Internet of Things using Smart Devices,TVS TRAINING and SERVICES </h4>
+          <ul>
+            <li><strong>Date:</strong> Jan 2024 </li>
+            <li><strong>Location:</strong> Chennai</li>
+            <li><strong>Relevant Coursework:</strong>Embedded Systems</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Java Programming, INTERNPE</h4>
+          <ul>
+            <li><strong>Date:</strong> Jan 2024 - Feb 2024</li>
+            <li><strong>Location:</strong> Online</li>
+            <li><strong>Relevant Coursework:</strong> Core Java</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Inplant Training, ENGINE FACTORY AVADI</h4>
+          <ul>
+            <li><strong>Date:</strong> June 2023 - July 2023</li>
+            <li><strong>Location:</strong> Chennai</li>
+            <li><strong>Description:</strong>I had a great opportunity to explore the engine mechanisms of armoured vehicles and get hands-on training in the industry and also to develop corporate skills.</li>
+          </ul>
+        </div>
+		
+        
+      </div>
+    </div>
+	</div>
+	
+	
+	
+  </section>
+  <section class="row2">
+   <div class="col-md-8">
+    <div class="experience-overlay">
+      <h1 style="font-family:papyrus;color:white"><strong>WORKSHOPS</strong></h1>
+      <div class="experience-content" style="padding-top:30px">
+        <div class="experience-item">
+          <h4>VLSI Circuit Desing & Analysis using EDA Tools, EPICAL LAYOUTS PVT LTD </h4>
+          <ul>
+            <li><strong>Date:</strong> Feb 2024 </li>
+            <li><strong>Location:</strong>RMK College of Engineering & Technology</li>
+             <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_epicallayouts-cadence-workshop-activity-7253077751174180864-OcN5?utm_source=share&utm_medium=member_ios">Link</a></li>
+          
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>Python Workshop, CYBERNAUT</h4>
+          <ul>
+            <li><strong>Date:</strong> June 2022</li>
+            <li><strong>Location:</strong> Online</li>
+            <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_programming-pythonlearning-cybernaut-activity-6980887799314997249-dOk7?utm_source=share&utm_medium=member_ios">Link</a></li>
+          
+  
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h4>C++ Workshop, CYBERNAUT</h4>
+          <ul>
+            <li><strong>Date:</strong> May 2022</li>
+            <li><strong>Location:</strong> Online</li>
+            <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_programming-cybernaut-learninganddevelopment-activity-6980886684192165888-U-5i?utm_source=share&utm_medium=member_ios">Link</a></li>
+          
+          </ul>
+        </div>
+		
+        
+      </div>
+    </div>
+	</div>
+	
+
+  </section>
+  
+
+<section class="row4">
+   <div class="col-md-8">
+    <div class="experience-overlays">
+      <h1 style="font-family:papyrus;padding-left:120px;padding-top:15px"><strong>CERTIFICATION</strong></h1>
+      <div class="experience-contents" style="padding-top:30px;color:white">
+        <div class="experience-items">
+          
+          <ul>
+                     <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_nptel-java-activity-7253082098796802049-8wcN?utm_source=share&utm_medium=member_ios">NPTEL - Programming in Java </a></li>
+          <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_nptel-vlsi-activity-7118062617222381568-24SS?utm_source=share&utm_medium=member_ios">NPTEL - VLSI Interconnects</a></li>
+		   <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_learning-nptel-consistent-activity-7149417388931694593-bYa2?utm_source=share&utm_medium=member_ios">NPTEL - Semiconductor Devices and Circuits</a></li>
+          </ul>
+        </div>
+		<div class="experience-items">
+          <ul>
+                  <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_coursera-cprogramming-activity-7116419390698360832-1SB3?utm_source=share&utm_medium=member_ios" >COURSERA - C Programming</a></li>
+          </ul>
+        </div>
+		<div class="experience-items">
+          <ul>
+                  <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_epicallayouts-cadence-workshop-activity-7253077751174180864-OcN5?utm_source=share&utm_medium=member_ios" >EPICAL LAYOUTS PVT LTD - Cadence Tool Workshop</a></li>
+          </ul>
+        </div>
+        <div class="experience-items">
+
+          <ul>
+		      <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_udemy-learningprogress-activity-7149631822052679680-yuue?utm_source=share&utm_medium=member_ios">Udemy - Master Course in Leadership,Master Course in Interviewing and Career Devolpment</a></li>
+		  <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_udemy-learningprogress-activity-7149631822052679680-yuue?utm_source=share&utm_medium=member_ios">Udemy - Fundamental Course in Web Framework</a></li>
+           
+          </ul>
+        </div>
+        <div class="experience-items">
+          <ul>
+                  <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_learning-activity-7149414465069797376-LUqY?utm_source=share&utm_medium=member_ios" >Indian Institute of Remote Sensing - Geospatial Technology for climate Smart Agriculture</a></li>
+          </ul>
+        </div>
+		
+        
+      </div>
+    </div>
+	</div>
+	
+	
+  </section>
+  <section class="row6">
+   <div class="col-md-8">
+    <div class="experience-overlays">
+      <h1 style="font-family:papyrus;padding-left:120px;padding-top:15px"><strong>PARTICIPATION </strong></h1>
+      <div class="experience-contents" style="padding-top:30px;color:white">
+	    
+        <div class="experience-items">
+          
+          <ul>
+                     <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_paperpresentation-activity-7149411878241251328-HNvQ?utm_source=share&utm_medium=member_ios">IDEIA DO QUE 2023 - SIMATS School of Engineering </a></li>
+          <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_paperpresentation-activity-7149411878241251328-HNvQ?utm_source=share&utm_medium=member_ios"> IBENTO 2023-SIMATS  Engineering</a></li>
+		  
+          </ul>
+        </div>
+		<div class="experience-items">
+          <ul>
+                  <li><a href="https://www.linkedin.com/posts/sushma-a-g-4664b2239_national-linkedin-activity-7096147125670998016-24Wl?utm_source=share&utm_medium=member_ios" >National Level Seminar on Recent Advances in Cyber Security - RMK College of Engineering & Technology</a></li>
+          </ul>
+        </div>
+		
+        
+      </div>
+    </div>
+	</div>
+	
+  </section>
+
+
+
+</main>
+</body>
+</html>
